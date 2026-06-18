@@ -19,13 +19,13 @@ if %errorlevel% neq 0 (
     echo [WARNING] Failed to verify/install some libraries. Attempting to start server anyway...
 )
 
-echo [3/3] Launching Flask server backend...
+echo [3/3] Launching Streamlit application...
 echo.
 echo --------------------------------------------------------------------
-echo   Server is starting up!
-echo   Open your browser and navigate to: http://127.0.0.1:5000
+echo   Application is starting up!
+echo   Streamlit will automatically open a browser window.
 echo   To terminate the application, press Ctrl+C in this window.
 echo --------------------------------------------------------------------
 echo.
-python app.py
+python -m streamlit run streamlit_app.py
 pause
